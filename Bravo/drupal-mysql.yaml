@@ -31,11 +31,6 @@ spec:
               secretKeyRef:
                 name: drupal-mysql-secret
                 key: MYSQL_DATABASE
-          - name: MYSQL_USER
-            valueFrom:
-              secretKeyRef:
-                name: drupal-mysql-secret
-                key: MYSQL_USER
         volumeMounts:
         - mountPath:  /var/lib/mysql
           name: mysqlpd
